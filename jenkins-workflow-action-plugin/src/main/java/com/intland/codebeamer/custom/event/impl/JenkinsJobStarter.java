@@ -77,9 +77,9 @@ public class JenkinsJobStarter extends AbstractWorkflowActionPlugin {
 	public void startJenkinsJob(BaseEvent<ArtifactDto, TrackerItemDto, ActionData<?>> event, TrackerItemDto trackerItem,
 			@ActionParam(value = JENKINS_JOB_PARAMETERS, width = 100) Map<String, Object> jenkinsJobParameters) throws Exception {
 
-		String url = "https://ci.codebeamer.net:8889/view/TestAPI/job/Test/build";
-		String userName = "sandor.zelei@intland.com";
-		String password = "119f8491a8ed45f6c36bf413dd00393a7a";
+		String url = "https://jenkins.com/view/TestAPI/job/Test/build";
+		String userName = "<username>";
+		String password = "<password>";
 
 		StringEntity entity = buildHttpEntity(jenkinsJobParameters);
 
